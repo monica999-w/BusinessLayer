@@ -1,0 +1,14 @@
+﻿1.What code smells did you see?
+You can't reuse parts of the code. The code is hard to understand
+
+2.What problems do you think the Speaker class has?
+All functionality resides in a single class. The "Register" method is loaded and tightly coupled, leading to maintenance difficulties.
+
+3.Which clean code principles (or general programming principles) did it violate?
+Both SOLID principles and KISS principles were violated, because the code was not simple enough to understand.
+This happens because a class contained all the checks in one method, and if I wanted to add a new "Login" method " I should have duplicated the code.
+
+4.What refactoring techniques did you use?
+Split the 'Register' method into smaller, more manageable methods.
+Moved exceptions to a separate folder for better organization and clarity. 
+Implemented try-catch blocks around each method.
